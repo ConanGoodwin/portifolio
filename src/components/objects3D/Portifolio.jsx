@@ -19,22 +19,15 @@ export function Model(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <group name="Vazio" position={[0.183, -0.696, 3.12]} scale={0.7}>
-          <mesh name="Betzi_Body" geometry={nodes.Betzi_Body.geometry} material={nodes.Betzi_Body.material} position={[0.001, -0.022, -0.124]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={0.006} />
-          <mesh name="Betzi_Head_V2" geometry={nodes.Betzi_Head_V2.geometry} material={nodes.Betzi_Head_V2.material} position={[0.005, 0.107, -0.026]} rotation={[Math.PI, 0, Math.PI]} scale={0.006} />
-          <mesh name="Betzi_Shild" geometry={nodes.Betzi_Shild.geometry} material={nodes.Betzi_Shild.material} position={[0.001, 0.035, -0.211]} rotation={[Math.PI, 0, Math.PI]} scale={0.006} />
-          <mesh name="Rim" geometry={nodes.Rim.geometry} material={nodes.Rim.material} position={[-0.099, -0.02, -0.123]} rotation={[Math.PI, 0, Math.PI / 2]} scale={0.006} />
-          <mesh name="Rim001" geometry={nodes.Rim001.geometry} material={nodes.Rim001.material} position={[-0.099, -0.02, 0.24]} rotation={[Math.PI, 0, Math.PI / 2]} scale={0.006} />
-          <mesh name="Rim002" geometry={nodes.Rim002.geometry} material={nodes.Rim002.material} position={[0.096, -0.02, 0.243]} rotation={[0, 0, -Math.PI / 2]} scale={0.006} />
-          <mesh name="Rim003" geometry={nodes.Rim003.geometry} material={nodes.Rim003.material} position={[0.096, -0.02, -0.12]} rotation={[0, 0, -Math.PI / 2]} scale={0.006} />
-          <mesh name="Tracks_V2" geometry={nodes.Tracks_V2.geometry} material={nodes.Tracks_V2.material} position={[-0.111, -0.02, 0.235]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} scale={-0.005} />
-          <mesh name="Tracks_V2001" geometry={nodes.Tracks_V2001.geometry} material={nodes.Tracks_V2001.material} position={[0.108, -0.02, -0.115]} rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={-0.005} />
+        <group name="Vazio" position={[0.183, -0.696, 2.641]} scale={[0.7, 0.7, 0.173]}>
+          <mesh name="Cilindro001" geometry={nodes.Cilindro001.geometry} material={materials.MatRodas} position={[-0.261, 0.387, -1.177]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.083, 0.243, 0.083]} />
         </group>
         <mesh name="Fundo" geometry={nodes.Fundo.geometry} material={materials.Mat_Fundo} position={[-0.114, 0.478, 0]} scale={[0.055, 0.801, 2.611]} />
+        <mesh name="Cilindro" geometry={nodes.Cilindro.geometry} material={materials.Mat_Fundo} position={[0, -0.426, 0.007]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.058, 2.481, 0.058]} />
         <mesh name="Relicario" geometry={nodes.Relicario.geometry} material={materials.Mat_Relicario} position={[0, 0.596, 2.038]} rotation={[0, 0, -Math.PI / 2]} scale={0.434} />
-        <mesh name="Texto" geometry={nodes.Texto.geometry} material={nodes.Texto.material} position={[0, 0.715, 1.43]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.497} />
-        <mesh name="Texto001" geometry={nodes.Texto001.geometry} material={nodes.Texto001.material} position={[0, 0.405, 1.328]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.146} />
-        <mesh name="Texto002" geometry={nodes.Texto002.geometry} material={nodes.Texto002.material} position={[0, -0.142, 2.458]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.135} />
+        <mesh name="Texto" geometry={nodes.Texto.geometry} material={materials.Mat_letras} position={[0, 0.715, 1.43]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.497} />
+        <mesh name="Texto001" geometry={nodes.Texto001.geometry} material={materials.Mat_letras} position={[0, 0.405, 1.328]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.146} />
+        <mesh name="Texto002" geometry={nodes.Texto002.geometry} material={materials.Mat_letras} position={[0, -0.142, 2.458]} rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={0.135} />
       </group>
     </group>
   )
